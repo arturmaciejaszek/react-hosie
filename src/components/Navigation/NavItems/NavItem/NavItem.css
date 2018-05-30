@@ -1,0 +1,72 @@
+.NavItemWrapper {
+  display: block;
+  color: #fff;
+  margin: 10px 0;
+  width: 100%;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.NaviItemWrapper:hover,
+.NavItemWrapper:active {
+  background-color: rgba(10, 10, 121, 0.8);
+}
+
+@media only screen and (min-width: 500px) {
+  .NavItemWrapper {
+    margin-top: 2px;
+    height: auto;
+    position: relative;
+    border: 1px solid transparent;
+  }
+
+  .NavItemWrapper:active {
+    box-shadow: inset 0 2px 2px #fff;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-size: 1.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid white;
+    text-shadow: 1px 2px #000;
+  }
+
+  .NavItem {
+    margin: 4px 10px 10px 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    min-height: 24px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 3px;
+    user-select: none;
+  }
+
+  .NavItem.active,
+  .NavItem::after {
+    content: '';
+    border-bottom: 3px solid white;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    transform: scaleX(0);
+  }
+
+  .NavItemWrapper:hover .NavItem::after {
+    content: '';
+    opacity: 1;
+    width: calc(100% +6px);
+    transform: scaleX(1);
+    transform-origin: center center 0px;
+    transition: all 0.5s ease-out;
+  }
+}

@@ -1,0 +1,52 @@
+.Welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Title {
+  animation: zoomIn 1s ease-out;
+}
+
+.BreakLine {
+  flex-grow: 1;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.Details {
+  visibility: hidden;
+  animation: slideInUp 0.5s ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 400%, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+    opacity: 1;
+  }
+}
