@@ -10,6 +10,10 @@
   text-align: center;
 }
 
+.Welcome > img {
+  align-self: center;
+}
+
 .Title {
   animation: zoomIn 1s ease-out;
 }

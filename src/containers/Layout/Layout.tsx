@@ -37,6 +37,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
           open={this.state.showSideDrawer}
           closed={this.sideDrawerClosedHandler}
         />
+        <div style={{ height: '100vh' }} />
       </>
     );
   }

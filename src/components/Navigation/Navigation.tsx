@@ -13,7 +13,7 @@ type NavigationProps = {
 const Navigation = (props: NavigationProps) => {
   return (
     <div className={styles.Navigation}>
-      <Logo />
+      <Logo height="100%" width="auto" />
       <nav className={styles.Desktop}>
         <NavItems />
       </nav>

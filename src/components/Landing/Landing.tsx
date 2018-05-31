@@ -14,12 +14,12 @@ type LandingProps = {
 
 const Landing = (props: LandingProps) => {
   return (
-    <div className={styles.Landing}>
+    <section className={styles.Landing}>
       <Background />
       <Navigation toggleClicked={props.showSideDrawer} open={props.open} />
       <Welcome />
       <Pointer clicked={props.clicked} />
-    </div>
+    </section>
   );
 };
 

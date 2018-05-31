@@ -5,7 +5,7 @@ import Logo from '../Logo/Logo';
 const Welcome = () => {
   return (
     <div className={styles.Welcome}>
-      <Logo />
+      <Logo height="10rem" width="10rem" />
       <h1 className={styles.Title}>Hosie</h1>
       <div className={styles.BreakLine} />
       <h4 className={styles.Details}>
