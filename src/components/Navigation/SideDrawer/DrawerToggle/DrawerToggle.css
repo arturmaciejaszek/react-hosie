@@ -4,6 +4,7 @@
   cursor: pointer;
   user-select: none;
   position: relative;
+  text-align: initial;
 }
 
 .Hamburger {

@@ -1,22 +1,27 @@
 import * as React from 'react';
 import * as styles from './Landing.css';
 
-import Background from '../Background/Background';
 import Navigation from '../Navigation/Navigation';
-import Welcome from '../Welcome/Welcome';
+import Background from './Background/Background';
+import Welcome from './Welcome/Welcome';
 import Pointer from '../UI/Pointer/Pointer';
 
 type LandingProps = {
   showSideDrawer: Function;
   open: boolean;
   clicked: Function;
+  Y: number;
 };
 
 const Landing = (props: LandingProps) => {
   return (
     <section className={styles.Landing}>
-      <Background />
-      <Navigation toggleClicked={props.showSideDrawer} open={props.open} />
+      <Background Y={props.Y} />
+      <Navigation
+        toggleClicked={props.showSideDrawer}
+        open={props.open}
+        Y={props.Y}
+      />
       <Welcome />
       <Pointer clicked={props.clicked} />
     </section>

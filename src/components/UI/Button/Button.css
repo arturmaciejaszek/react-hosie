@@ -1,0 +1,23 @@
+.Button {
+  background-color: rgba(10, 10, 121, 1);
+  color: #fff;
+  width: 40%;
+  padding: 1rem;
+  margin: auto;
+  border-radius: 5px;
+  transform: translateY(0);
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+
+.Button:hover {
+  transform: translateY(-3px);
+  box-shadow: 1px 1px 1px black;
+}
+
+.Button:active {
+  /* transform: translateY(-1px);
+    box-shadow: 1px 1px 1px black; */
+  /* filter: brightness(50%); */
+  background-color: #4444dd;
+}

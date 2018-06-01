@@ -8,11 +8,14 @@ import NavItems from './NavItems/NavItems';
 type NavigationProps = {
   open: boolean;
   toggleClicked: Function;
+  Y: number;
 };
 
 const Navigation = (props: NavigationProps) => {
+  let classes: string[] = [styles.Navigation];
+  if (props.Y >= 70) classes = [styles.Navigation, styles.Solid];
   return (
-    <div className={styles.Navigation}>
+    <div className={classes.join(' ')}>
       <Logo height="100%" width="auto" />
       <nav className={styles.Desktop}>
         <NavItems />

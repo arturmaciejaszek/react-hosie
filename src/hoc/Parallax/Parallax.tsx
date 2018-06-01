@@ -1,5 +1,5 @@
 import * as React from 'react';
-const throttle = require('lodash.throttle');
+import * as _ from 'lodash';
 
 const Parallax = <P extends object>(
   WrappedComponent: React.ComponentType<P>
@@ -14,7 +14,7 @@ const Parallax = <P extends object>(
       this.setState({ y: newY });
     };
 
-    throttled = throttle(this.setY, 100);
+    throttled = _.throttle(this.setY, 100);
 
     componentDidMount() {
       if (window.matchMedia('(min-width: 500px)').matches)

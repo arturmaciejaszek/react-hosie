@@ -1,0 +1,28 @@
+.Background {
+  height: 100vh;
+  width: 100vw;
+  z-index: -10;
+  overflow: hidden;
+  background-position: center;
+  background-color: rgba(10, 10, 121, 0.8);
+}
+
+:global(.no-webp) .Background {
+  background-image: linear-gradient(
+      162deg,
+      rgba(2, 0, 36, 0.9) 0%,
+      rgba(10, 10, 121, 0.8) 55%,
+      rgba(0, 212, 255, 1) 100%
+    ),
+    url(../../../assets/smile.jpg);
+}
+
+:global(.webp) .Background {
+  background-image: linear-gradient(
+      162deg,
+      rgba(2, 0, 36, 0.9) 0%,
+      rgba(10, 10, 121, 0.8) 55%,
+      rgba(0, 212, 255, 1) 100%
+    ),
+    url(../../../assets/smile.webp);
+}

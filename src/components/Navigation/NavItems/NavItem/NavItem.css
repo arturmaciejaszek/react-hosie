@@ -30,10 +30,11 @@
     color: rgba(255, 255, 255, 0.7);
     border: 1px solid white;
     text-shadow: 1px 2px #000;
+    filter: none;
   }
 
   .NavItem {
-    margin: 4px 10px 10px 10px;
+    margin: 0.4rem 1rem 1rem 1rem;
     font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 3px;
@@ -41,7 +42,7 @@
     text-transform: uppercase;
     color: white;
     min-height: 24px;
-    padding: 10px;
+    padding: 1rem;
     cursor: pointer;
     position: relative;
     border-radius: 3px;

@@ -10,3 +10,9 @@ body {
   box-sizing: border-box;
   user-select: none;
 }
+
+:global(section) {
+  text-align: center;
+  color: rgba(10, 10, 121, 1);
+  margin: auto;
+}

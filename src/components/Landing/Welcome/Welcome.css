@@ -18,13 +18,6 @@
   animation: zoomIn 1s ease-out;
 }
 
-.BreakLine {
-  flex-grow: 1;
-  height: 3px;
-  border-radius: 50%;
-  background-color: #fff;
-}
-
 .Details {
   visibility: hidden;
   animation: slideInUp 0.5s ease-in 1s;

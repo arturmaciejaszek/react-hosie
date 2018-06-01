@@ -1,0 +1,6 @@
+.BreakLine {
+  flex-grow: 1;
+  height: 3px;
+  border-radius: 50%;
+  background-color: rgba(10, 10, 121, 1);
+}

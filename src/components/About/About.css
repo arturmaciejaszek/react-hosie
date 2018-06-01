@@ -1,0 +1,30 @@
+.About {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  max-width: 80%;
+}
+
+.CardContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+}
+
+.CardContainer > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .CardContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row;
+  }
+
+  .CardContainer > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
